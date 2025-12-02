@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- link for font style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header start from here -->
+    <header role="banner">
+      <div class="container">
+        <nav role="navigation" aria-label="main-navigation">
+          <h1>ExploreWorld</h1>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Destination</a></li>
+            <li><a href="#package">Package</a></li>
+            <li><a href="#about">Testimonials</a></li>
+            <li><a href="#about">Book Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header end here -->
+
+    <!-- Hero section -->
+
+    <section id="home" role="region" aria-label="hero-section">
+      <video
+        class="background-video"
+        src="Video.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+
+      <div class="overlay">
+        <div class="home-content">
+          <h2>Discover Your Next Adventure</h2>
+          <p>Experience the wonder of the world with us</p>
+          <a href="#packages" class="button" aria-label="tarvel-package"
+            >Explore Packages</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero section end here -->
+
+    <!-- Destination section start -->
+
+    <section
+      id="destination"
+      class="section"
+      role="region"
+      aria-label="destination-section"
+    >
+      <div class="container">
+        <h2 id="destination-heading">Destinations</h2>
+        <div class="destination-grid">
+          <article class="destination-card">
+            <img src="download (1).jpg" alt="" />
+            <h3>Humayu Tomb</h3>
+          </article>
+          <article class="destination-card">
+            <img src="download (2).jpg" alt="" />
+            <h3>Akhshardhamb</h3>
+          </article>
+          <article class="destination-card">
+            <img src="download.jpg" alt="" />
+            <h3 c>Red Fort</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destination section end here -->
+
+    <!-- Our package section start here -->
+
+    <section
+      id="package"
+      class="section"
+      role="region"
+      aria-label="package-section "
+    >
+      <div class="conatiner">
+        <h2 id="package-heading">Our Packages</h2>
+        <div class="package-grid" role="listitem">
+          <article class="package">
+            <img src="download (1).jpg" alt="" />
+            <h3>Humayu Tomb</h3>
+            <p>10 days | Starting Soon</p>
+            <button class="btn" aria-label="Book Delhi Tour">Book Now</button>
+          </article>
+          <article class="package">
+            <img src="download (2).jpg" alt="" />
+            <h3>Akhshardhamb</h3>
+            <p>10 days | Starting Soon</p>
+            <button class="btn" aria-label="Book Delhi Tour">Book Now</button>
+          </article>
+          <article class="package">
+            <img src="download.jpg" alt="" />
+            <h3 c>Red Fort</h3>
+            <p>10 days | Starting Soon</p>
+            <button class="btn" aria-label="Book Delhi Tour">Book Now</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package section end here -->
+
+    <!-- Testimonials start here -->
+
+    <section
+      id="testimpnials"
+      class="section"
+      role="region"
+      aria-label="testimpnials-section"
+    >
+      <div class="container">
+        <h2 id="testimpnials-heading">Our travelers says</h2>
+
+        <div class="testimonial-grid">
+          <blockquote class="testimonial" role="listitem">
+            <i class="fa-solid fa-quote-left fa-2x"></i>
+            <p>
+              I had a great experience with this travel company. They were very
+              helpful and provided me with all the information I needed to make
+              my trip unforgettable.
+            </p>
+          </blockquote>
+          <blockquote class="testimonial" role="listitem">
+            <i class="fa-solid fa-quote-left fa-2x"></i>
+            <p>
+              I had an amazing experience with this travel company. The staff
+              were very helpful and provided me with all the information I
+              needed to make my trip unforgettable.
+            </p>
+          </blockquote>
+          <blockquote class="testimonial" role="listitem">
+            <i class="fa-solid fa-quote-left fa-2x"></i>
+            <p>
+              I had an amazing experience with this travel company. They were
+              very helpful and provided me with all the information I needed to
+              make my trip unforgettable.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials end here -->
+
+    <!-- Booking section start here -->
+    <section id="booking" role="form" aria-label="booking-section">
+
+
+      <div class="container">
+
+        <h2 id="booking-heading">Book Travel</h2>
+        <p id="booking-description"> Book your next adventure with us</p>
+
+        <form aria-label="booking-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" name="fullname" id="fullname" required placeholder="Enter your full name"> 
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Enter your email address"> 
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number"> 
+
+          <label for="destination">Destination</label>
+          <select name="destination" id="destination">
+            <option value="Delhi">Delhi</option>
+            <option value="Manali">Manali</option>
+            <option value="Gurgaon">Gurgaon</option>
+          </select>
+
+          <label for="departure-date">Departure Date</label>
+          <input type="date" name="departure-date" id="departure-date" required>
+
+          <label for="return-date">Return Date</label>
+          <input type="date" name="return-date" id="return-date" required>
+
+          <label for="message or feedback">Massege or Feedback</label>
+          <textarea name="message or feedback" id="message or feedback"> </textarea>
+          
+          <button type="submit">Book Now</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Booking section end here -->
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-item">
+            <h3>Get in Touch</h3>
+            <ul>
+              <li><a href="mailto:info@travelagency.com">info@travelagency.com</a></li>
+              <li><a href="tel:+911234567890">+91 1234 567890</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/travelagency" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/travelagency/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#booking">Book Now</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2023 Travel Agency. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
